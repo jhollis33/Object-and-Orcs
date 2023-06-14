@@ -37,3 +37,30 @@ for (let i = 0; i < movies.length; i++) {
   console.log(movies[i].title);  
 }
 
+const foo = {
+  arr:[1,2,3],
+  obj: {
+    prop:`object property`
+  },
+  doSomething:() => {
+    console.log(`I did something!`)
+  }
+}
+
+console.log(foo.arr[0]);
+console.log(foo.obj.prop);
+foo.doSomething();
+
+//An Array of Arrays 
+const foa = [
+  [1,2,3],
+  ["4","5","6"],
+  [7,8,9],
+  ()=> {
+    console.log(`I am a function inside an array`);
+  }
+]
+
+console.log(foa[0]);
+console.log(foa[0][1]);
+console.log(foa[3]());
