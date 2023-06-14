@@ -64,3 +64,49 @@ const foa = [
 console.log(foa[0]);
 console.log(foa[0][1]);
 console.log(foa[3]());
+
+//Creating a classes
+class Character {
+  constructor (name,age,eyes,hair, lovesCats = false, lovesDogs) {
+    this.legs = 2;
+    this.arm = 2;
+    this.name = name;
+    this.age = age;
+    this.eyes = eyes;
+    this.hair = hair;
+    this.lovesCats = lovesCats;
+    this.lovesDogs - lovesDogs || true;
+  }
+
+  setHairColor (HairColor) {
+    this.hair = HairColor
+  }
+  //method1
+  greet (otherCharacter) {
+    console.log(`hello ${otherCharacter}`);
+  }
+  //method2
+  smite() {
+    console.log(`I smite thee you vile person`);
+  }
+}
+
+const Alexander = new Character();
+const Brock = new Character();
+
+console.log(typeof me);
+
+Alexander.greet();
+Brock.greet();
+
+Alexander.greet(`Brock`)
+Brock.greet(`Alexander`)
+
+Alexander.smite()
+
+//name,age,eyes,hair
+const Azreal = new Character(`Azreal`, 150, `green`,`silver`, true, true);
+Azreal.eyes = `Hazel`;
+console.log(Azreal);
+
+Azreal.setHairColor(`red`)
